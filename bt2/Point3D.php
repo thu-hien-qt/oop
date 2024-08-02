@@ -6,7 +6,7 @@ class Point3D extends Point2D
 {
     private float $z;
 
-    public function __construct($x = null, $y = null, $z = null)
+    public function __construct($x = 0, $y = 0, $z = 0)
     {
         parent::__construct($x, $y);
         if ($z != null ) 

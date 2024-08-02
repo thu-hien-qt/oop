@@ -1,16 +1,17 @@
-<?php 
+<?php
+
 namespace bt2;
+
 class Point2D
 {
     private float $x;
     private float $y;
 
-    public function __construct($x = null, $y = null)
+    public function __construct($x = 0, $y = 0)
     {
-        if ($x != null && $y != null) {
-            $this->x = $x;
-            $this->y = $y;
-        }
+
+        $this->x = $x;
+        $this->y = $y;
     }
 
     public function getX()
@@ -47,6 +48,6 @@ class Point2D
 
     public function __toString()
     {
-        return "(".$this->x.", ".$this->y.")";
+        return "(" . $this->x . ", " . $this->y . ")";
     }
 }

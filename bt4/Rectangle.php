@@ -7,7 +7,7 @@ class Rectangle extends Shape
     private float $width;
     private float $length;
 
-    public function __construct(float $width = 1, float $length = 1, $color, bool $filled)
+    public function __construct(float $width = 1, float $length = 1, $color = "red", bool $filled = true)
     {
         $this->width = $width;
         $this->length = $length;

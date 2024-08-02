@@ -4,7 +4,7 @@ require "Rectangle.php";
 
 class Square extends Rectangle
 {
-    public function __construct(float $side = 1, $color, bool $filled)
+    public function __construct(float $side = 1, $color = "red", bool $filled = true)
     {
         parent::__construct($side, $side, $color, $filled);
     }

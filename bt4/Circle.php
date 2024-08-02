@@ -6,7 +6,7 @@ class Circle extends Shape
 {
     private float $radius;
 
-    public function __construct(float $radius, $color, bool $filled)
+    public function __construct(float $radius = 1, $color = "red", bool $filled = true)
     {
         $this->radius = $radius;
         parent::__construct($color, $filled);

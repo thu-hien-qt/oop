@@ -9,9 +9,9 @@ class Dog extends Mammal
         parent::__construct($name);
     }
 
-    public function greets($another = "Dog")
+    public function greets(Dog $another = null)
     {
-        if ($another == "Dog") {
+        if ($another != null) {
             print "Woooof";
         } else {
             print "Woof";

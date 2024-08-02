@@ -19,12 +19,12 @@ class Circle implements GeometricObject
     public function getArea()
     {
         $radius = $this->radius;
-        return $radius * 2 *3.14;
+        return $radius * $radius * 3.14;
     }
 
     public function getPerimeter()
     {
         $radius = $this->radius;
-        return $radius * $radius * 3.14;
+        return $radius * 2 *3.14;
     }
 }
